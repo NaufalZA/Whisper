@@ -3,7 +3,7 @@ from flask_cors import CORS
 from faster_whisper import WhisperModel
 import tempfile, os
 
-model_size = "./whisper-salaman-ct2"
+model_size = "small"
 model = WhisperModel(model_size, device="cuda", compute_type="float16")
 
 app = Flask(__name__)
